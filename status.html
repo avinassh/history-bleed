@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>History Bleed - Status Page</title>
+    <link rel="stylesheet" type="text/css" href="bulma.min.css">
+    <script src="jquery.min.js"></script>
+    <script src="status.js"></script>
+  </head>
+  <body>
+  <header class="header">
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            History Bleed
+          </h1>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <p>Read more about <a href="https://blog.cloudflare.com/incident-report-on-memory-leak-caused-by-cloudflare-parser-bug/" target="_BLANK">Cloud Bleed</a>.</p>
+        <p>History Bleed checks all your visited sites from the history against the sites which use Cloudflare. The sites found may or not have leaked data, but do reset your passwords, API keys, tokens etc nevertheless.</p>
+        <p>Refresh this page after a while to see if any of the sites you visited in past were possibly affected in the breach.</p>
+      </div>
+    </section>
+  </header>
+  <hr>
+<section class="container">
+  <div class="content">
+   <table>
+    <tbody>
+      <tr><td>Extension Status</td><td id="status">Not Running<td></tr>
+      <tr><td>Sites Checked</td><td id="checked">0<td></tr>
+      <tr><td>Possibly Affected Sites</td><td id="affected">0<td></tr>
+    </tbody>
+    </table>
+    </div>
+    </section>
+   <hr>
+
+<section>
+<div class="container">
+<div class="content">
+   <table>
+    <thead>
+      <tr>
+        <th>Possibly Affected Sites</th>
+      </tr>
+    </thead>
+    <tbody id="sites">
+    </tbody>
+    </table>
+    </div>
+    </div>
+</section>
+<hr/ >
+  <section>
+    <div class="container">
+      <div class="content is-pulled-right">
+        <p>Built by <a href="http://avi.im/" target="_BLANK">v</a> | <a href="https://github.com/avinassh/history-bleed" target="_BLANK">Github</a> | Donate: <span class="is-light">1LAmWUmdu1r1KLQrcZ2uK6r5P7xx5gRmnW</span></p>
+        <p></p>
+      </div>
+    </div>
+  </section>
+  </body>
+</html>
