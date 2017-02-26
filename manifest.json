@@ -2,6 +2,11 @@
   "manifest_version": 2,
   "name": "History Bleed",
   "version": "0.1",
+  "default_locale": "en",
+  "author": "Avinash Sajjanshetty",
+  "homepage_url": "http://avi.im/history-bleed/",
+  "offline_enabled": true,
+  "description": "Chrome Extension which checks all your browser history to see if any of the sites you visited affected by Cloud Bleed",
   "permissions": ["tabs", "notifications", "history", "contextMenus"],
   "background": {
     "scripts": ["jquery.min.js", "background.js"]
