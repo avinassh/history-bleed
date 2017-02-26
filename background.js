@@ -17,7 +17,7 @@ chrome.browserAction.onClicked.addListener(function(tab) {
     // Send a message to the active tab
     chrome.notifications.create('status.html', {
         type: 'basic',
-        iconUrl: 'icon.png',
+        iconUrl: 'icon128.png',
         title: 'History Bleed started',
         message: 'The extension will now check your history against the Cloudflare sites. Refresh the status page for progress report'
      }, function(notificationId) {
@@ -54,7 +54,7 @@ chrome.browserAction.onClicked.addListener(function(tab) {
             backroundData.affectedSites = affectedSites;
             chrome.notifications.create('status.html', {
                 type: 'basic',
-                iconUrl: 'icon.png',
+                iconUrl: 'icon128.png',
                 title: 'History Bleed completed',
                 message: 'History Bleed check has completed. Refresh the status page.'
             }, function(notificationId){}
