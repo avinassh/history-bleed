@@ -1,6 +1,6 @@
 # History Bleed
 
-Chrome Extension which checks all your browser history to see if any of the sites you visited affected by [Cloud Bleed](https://blog.cloudflare.com/incident-report-on-memory-leak-caused-by-cloudflare-parser-bug/).
+Chrome Extension which checks all your browser history to see if any of the sites you visited affected by [Cloud Bleed](https://blog.cloudflare.com/incident-report-on-memory-leak-caused-by-cloudflare-parser-bug/). Thanks to [pirate](https://github.com/pirate) for providing the list of Cloudflare [users](https://github.com/pirate/sites-using-cloudflare).
 
 ## Download
 
